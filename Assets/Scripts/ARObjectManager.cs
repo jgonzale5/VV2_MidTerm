@@ -8,6 +8,7 @@ public class ARObjectManager : MonoBehaviour
     [System.Serializable]
     public enum State {Place, Move, Rotate, None};
 
+    [Header("THIS IS WHERE YOUR MODEL GOES V")]
     [Tooltip("The prefab of the object that you can spawn in AR")]
     public Transform ARObj;
     GameObject selectedObject;
