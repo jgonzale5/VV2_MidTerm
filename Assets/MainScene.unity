@@ -96,7 +96,6 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
-    m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -287,9 +286,9 @@ GameObject:
   m_Component:
   - component: {fileID: 226280106}
   - component: {fileID: 226280102}
-  - component: {fileID: 226280105}
   - component: {fileID: 226280104}
   - component: {fileID: 226280103}
+  - component: {fileID: 226280105}
   m_Layer: 0
   m_Name: AR Camera
   m_TagString: MainCamera
@@ -354,8 +353,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_UseCustomMaterial: 0
   m_CustomMaterial: {fileID: 0}
-  m_UseCustomRendererAsset: 0
-  m_CustomRendererAsset: {fileID: 0}
 --- !u!114 &226280104
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -379,15 +376,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 226280101}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5a2a9c34df4095f47b9ca8f975175f5b, type: 3}
+  m_Script: {fileID: 11500000, guid: 6e3c44306fb1e439a9f18b2212b8ab70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Device: 0
-  m_PoseSource: 6
-  m_PoseProviderComponent: {fileID: 0}
-  m_TrackingType: 0
-  m_UpdateType: 0
-  m_UseRelativeTransform: 0
 --- !u!4 &226280106
 Transform:
   m_ObjectHideFlags: 0
@@ -537,9 +528,8 @@ Light:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345307882}
   m_Enabled: 1
-  serializedVersion: 10
+  serializedVersion: 9
   m_Type: 1
-  m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
@@ -1924,7 +1914,6 @@ MeshRenderer:
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
